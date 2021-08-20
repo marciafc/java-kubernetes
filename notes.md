@@ -115,12 +115,16 @@ kubectl -n dev-to scale deployment/myapp --replicas=2
 while true do curl "http://dev.local/app/hello" echo sleep 2 done
 
 // debug remoto
-1) Necessário configurar isso: JAVA_OPTS: "-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n -XX:MaxRAMPercentage=80"
-2) Executar comando (tem que escolher o pod que vai depurar)
+1) Necessário configurar isso no yaml: JAVA_OPTS: "-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n -XX:MaxRAMPercentage=80"
+
+2) Executar comando (tem que escolher o pod que vai depurar):
+
 	kubectl port-forward -n=dev-to <pod_name> 5005:5005
-	kubectl port-forward -n=dev-to myapp-5brtwr322rdce2 5005:5005
-3) Criar debug remote na IDE
-4) Fazer curl (colocar os breakpoints antes)
+	EXEMPLO: kubectl port-forward -n=dev-to myapp-5brtwr322rdce2 5005:5005
+	
+3) Criar debug remote na IDE \ Run debug
+
+4) Fazer curl (colocar os breakpoints antes de fazer o curl)
 
 // Deletar e stop geraç
 make k-delete
