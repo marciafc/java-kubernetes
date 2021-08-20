@@ -290,12 +290,6 @@ stern myapp
 `make k:all`
 
 
-## References
-
-https://kubernetes.io/docs/home/
-
-https://minikube.sigs.k8s.io/docs/
-
 ## Useful commands
 
 ```
@@ -306,3 +300,28 @@ kubectl top node
 
 kubectl top pod <nome_do_pod>
 ```
+
+## Notes
+
+[My notes](notes.md)
+
+
+### References
+
+  - [Curso Java Kubernetes DIO - Github](https://github.com/sandrogiacom/java-kubernetes)
+
+  - [Scripts Instalar Ferramentas K8S - Github](https://github.com/sandrogiacom/k8s)
+    
+    - Para Debian, acessar /tools/deb
+
+  - [Scripts Instalar Docker, Node, etc - Github](https://github.com/sandrogiacom/dev-scripts)
+    
+    - [jenv](https://github.com/sandrogiacom/dev-scripts/blob/master/java/jenv.sh): gerencia versão sdk para utilizar (similar ao SDKMan)
+    
+  - [jEnv](https://www.jenv.be/)    
+
+  - [Kubernetes for Java Developers - Setup - Tutorial](https://dev.to/sandrogiacom/kubernetes-for-java-developers-setup-41nk)
+
+  - https://kubernetes.io/docs/home/
+
+  - https://minikube.sigs.k8s.io/docs/
