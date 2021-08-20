@@ -1,4 +1,4 @@
-FROM openjdk:15-alpine
+FROM adoptopenjdk/maven-openjdk11
 
 RUN mkdir /usr/myapp
 

@@ -5,10 +5,13 @@ metadata:
   namespace: dev-to
 spec:
   rules:
-    - host: dev.local
+    - host: "dev.local"
       http:
         paths:
           - path: /app
+            pathType: Prefix
             backend:
-              serviceName: myapp
-              servicePort: 8080
+              service:
+                name: myapp
+                port:
+                  number: 8080
