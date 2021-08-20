@@ -1,6 +1,27 @@
 # Notas de estudo
 
+
+Dependência 'spring-boot-starter-data-rest' -> gera endpoints a partir das entidades (não recomendado)
+
+Exemplos:
+    
+```
+GET /app/users
+
+POST /app/users
+
+    curl --location --request POST 'http://192.168.49.2:30562/app/users' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+    "name": "new user",
+    "birthDate": "2010-10-01"
+    }'
 ``` 
+
+Kubernetes
+
+``` 
+
 docker ps -a | grep myapp
 
 docker logs myapp

@@ -52,7 +52,7 @@ http://localhost:8080/app/hello
 Create a Dockerfile:
 
 ```yaml
-FROM openjdk:15-alpine
+FROM adoptopenjdk/maven-openjdk11
 RUN mkdir /usr/myapp
 COPY target/java-kubernetes.jar /usr/myapp/app.jar
 WORKDIR /usr/myapp
